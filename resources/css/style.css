@@ -16,6 +16,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clear-fix {
+    zoom: 1;
+}
+
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*------------- Resuable component ------------- */
 .row {
     max-width: 1140px;
@@ -172,5 +184,99 @@ header {
     border-bottom: 2px solid #af5404;
 }
 
+/*------------- Feature Section ------------- */
 
+.section-feature .long-para {
+    margin-bottom: 35px;
+}
+
+/*------------- Meal Section ------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meal-showcase {
+    width: 100%;
+    list-style: none;
+}
+
+.meal-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    background-color: #000;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    opacity: 70%;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s, scale 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*------------- How it works section ------------- */
+
+.section-steps {
+    background-color: #dddadd;
+}
+
+.step-box {
+    margin-top: 30px;
+}
+
+.step-box:first-child {
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 3%;
+}
+
+ .step-box:last-child {
+    margin-top: 70px;
+    padding-left: 3%;
+} 
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step div {
+    display: inline-block;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 160%;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
 
