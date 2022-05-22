@@ -100,7 +100,7 @@ h3 {
 
 
 /*------------- Button Group ------------- */
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -354,3 +354,135 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/*------------- Sgin Up Section Plan ------------- */
+
+.section-plan {
+    background: #cfcfcf;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 5px 5px #8a898a;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(48, 47, 47);
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+/*------------- Form Section ------------- */
+
+.content-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email],
+select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #616060;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/*------------- Footer Section ------------- */
+
+footer {
+    background-color: rgb(53, 30, 30);
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.section-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li , .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child , .social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link , .social-links li a:link, .footer-nav li a:visited , .social-links li a:visited {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #999696;
+}
+
+.footer-nav li a:hover , .social-links li a:hover, .footer-nav li a:active , .social-links li a:active {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #fff;
+}
+
+.social-links a {
+    font-size: 130%;
+}
+
+footer p {
+    text-align: center;
+    color: #888;
+    font-size: 90%;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+
+
